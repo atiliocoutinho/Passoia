@@ -1,0 +1,47 @@
+
+// Importando fonte popins do google fonts:
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+
+.look {
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 100%vw;
+}
+
+
+.lookContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+    img {
+      width: 22vw;
+      height: auto;
+    };
+
+    .lookitem {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+  
+    };
+
+    .lookt {
+      position: absolute;
+      bottom: 20px;
+      left: 15px;
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-size: 24px;
+      color: white;
+      text-shadow: 10 10px 20px rgba(0, 0, 0, 0.200);
+
+    };
+    
+};
+
+
+

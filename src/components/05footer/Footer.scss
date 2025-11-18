@@ -1,0 +1,67 @@
+
+
+ h3 {
+        margin-bottom: 20px;
+        font-family: "Roboto", sans-serif;
+    };
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+}
+
+.atendimento {
+    height: 200px;
+    width: auto;
+    padding: 20px;
+
+    ul {
+        list-style: none;
+        line-height: 2;
+
+        li {
+            font-family: "Roboto", sans-serif;
+            font-weight: lighter;
+            color: #2D2D2D;
+        };
+    };
+};
+
+
+.fpagamento {
+
+    height: 200px;
+    width: auto;
+    padding: 20px;
+
+
+    .wrap {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+    };
+
+    .pagamentoimg {
+        width: auto;
+        height: 40px;
+    };
+};
+
+.redes {
+    
+    height: 200px;
+    width: auto;
+    padding: 20px;
+
+    .flex {
+        display: flex;
+        gap: 20px;
+
+        img {
+            border-radius: 8px;
+        };
+    };
+};
