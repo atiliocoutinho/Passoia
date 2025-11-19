@@ -1,11 +1,11 @@
 // Importa os componentes necessários
 
-import Header from "./components/00header/index.jsx";
-import Banner from "./components/01banner/index.jsx";
-import LookSection from "./components/02look-section/index.jsx";
-import Lancamentos from "./components/03lancamentos/index.jsx";
-import Newpng from "./components/04new/index.jsx";
-import Footer from "./components/05footer/index.jsx";
+import Header from "./components/Header/index.jsx";
+import Banner from "./components/Banner/index.jsx";
+import LookSection from "./components/Look-section/index.jsx";
+import Lancamentos from "./components/Lancamentos/index.jsx";
+import Newpng from "./components/New/index.jsx";
+import Footer from "./components/Footer/index.jsx";
 
 // Exibe a estrutura principal da aplicação
 
@@ -18,8 +18,8 @@ function App() {
         <LookSection/>
         <Lancamentos/>
         <Newpng/>
-        <Footer/>
       </main>
+      <Footer/>
     </>
   );
 }
