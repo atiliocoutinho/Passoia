@@ -16,8 +16,8 @@ function Footer() {
     return (
         <footer>
             <div class="atendimento">
-                <h3>ATENDIMENTO</h3>
-                <ul>
+                <h4>ATENDIMENTO</h4>
+                <ul class="ul-atendimento">
                     <li>Fale Conosco</li>
                     <li>Perguntas Frequentes</li>
                     <li>Meus Pedidos</li>
@@ -26,22 +26,22 @@ function Footer() {
             </div>
             
             <div class="fpagamento">
-                <h3>FORMAS DE PAGAMENTO</h3>
+                <h4>FORMAS DE PAGAMENTO</h4>
                 <div class="wrap">
-                    <img class="pagamentoimg" src={mastercard} alt="" />
-                    <img class="pagamentoimg" src={visa} alt="" />
-                    <img class="pagamentoimg" src={pix} alt="" />
-                    <img class="pagamentoimg" src={boleto} alt="" />
+                    <img class="pagamentoimg" src={mastercard} alt="Mastercard" />
+                    <img class="pagamentoimg" src={visa} alt="Visa" />
+                    <img class="pagamentoimg" src={pix} alt="Pix" />
+                    <img class="pagamentoimg" src={boleto} alt="Boleto" />
                 </div>
             </div>
              
             <div class="redes">
-                <h3>SIGA-NOS NAS REDES SOCIAIS</h3>
+                <h4>SIGA-NOS NAS REDES SOCIAIS</h4>
                 <div class="flex">
-                    <img src={insta} alt="" />
-                    <img src={facebook} alt="" />
-                    <img src={youtube} alt="" />
-                    <img src={x} alt="" />
+                    <img src={insta} alt="Instagram" title="Instagram" />
+                    <img src={facebook} alt="Facebook" title="Facebook" />
+                    <img src={youtube} alt="YouTube" title="YouTube"/>
+                    <img src={x} alt="Twitter" title="Twitter" />
                 </div>
             </div>
         </footer>

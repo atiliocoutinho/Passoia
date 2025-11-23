@@ -16,22 +16,22 @@ function LookSection() {
             <div class="lookContainer">
 
             <div class="lookitem">
-                <h4 class="lookt">LÁBIOS</h4>
+                <h3 class="lookt">LÁBIOS</h3>
                 <img src= {lipOil} alt="" />
             </div>
 
             <div class="lookitem">
-                <h4 class="lookt">OLHOS</h4>
+                <h3 class="lookt">OLHOS</h3>
                 <img src= {eye} alt="" />
             </div>
 
             <div class="lookitem">
-                <h4 class="lookt">ROSTO</h4>
+                <h3 class="lookt">ROSTO</h3>
                 <img src= {face} alt="" />
             </div>
 
             <div class="lookitem">
-                <h4 class="lookt">TENDÊNCIA</h4>
+                <h3 class="lookt">TENDÊNCIA</h3>
                 <img src= {trend} alt="" />
             </div>
 

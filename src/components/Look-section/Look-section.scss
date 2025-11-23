@@ -26,16 +26,13 @@
       position: relative;
       display: inline-block;
       cursor: pointer;
-  
     };
 
     .lookt {
       position: absolute;
       bottom: 20px;
       left: 15px;
-      margin: 0;
-      font-family: "Roboto", sans-serif;
-      font-size: 24px;
+      font-size: 1.5rem;
       color: white;
       text-shadow: 10 10px 20px rgba(0, 0, 0, 0.200);
 
@@ -43,5 +40,34 @@
     
 };
 
+@media (max-width: 770px) {
+    .lookContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+   
+    img {
+      width: 20vw;
+      height: auto;
+    };
 
+    .lookitem {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
 
+      img {
+        width: 100%;
+        height: 60vw;
+      };
+    };
+
+    .lookt {
+    
+      font-size: 1rem;
+    };
+    
+};
+};

@@ -1,7 +1,6 @@
 // Importa os componentes necessários
 
 import Header from "./components/Header/index.jsx";
-import Banner from "./components/Banner/index.jsx";
 import LookSection from "./components/Look-section/index.jsx";
 import Lancamentos from "./components/Lancamentos/index.jsx";
 import Newpng from "./components/New/index.jsx";
@@ -12,14 +11,11 @@ import Footer from "./components/Footer/index.jsx";
 function App() {
   return (
     <>
-      <Header/>
-       <Banner/>
-      <main>
+        <Header/>
         <LookSection/>
         <Lancamentos/>
         <Newpng/>
-      </main>
-      <Footer/>
+        <Footer/>
     </>
   );
 }

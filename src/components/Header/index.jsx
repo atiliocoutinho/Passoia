@@ -6,10 +6,17 @@ function Header() {
     <header>
       <nav>
         <img class="logo" src={logo} alt="Logo" />
+        <div id="menu-mobile">
+          <div>
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+          </div>
+        </div>
         <ul>
-          <li>LOOKS</li>
-          <li>LANÇAMENTOS</li>
-          <li>NOVIDADES</li>
+          <li class="li-header"><a href="#">LOOKS</a></li>
+          <li class="li-header"><a href="#">LANÇAMENTOS</a></li>
+          <li class="li-header"><a href="#">NOVIDADES</a></li>
         </ul>
       </nav>
     </header>
