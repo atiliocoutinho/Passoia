@@ -25,7 +25,7 @@ function Lancamentos() {
     const [cor, setCor] = useState (azul)
 
   return (
-    <section class="lansection">
+    <section id="Lançamentos" class="lansection">
       <h2>APROVEITE OS LANÇAMENTOS</h2>
       
       <div class="landiv">

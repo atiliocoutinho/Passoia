@@ -22,12 +22,14 @@
       img {
         height: auto;
         width: 100px;
+        border-radius: 10px;
       };
 }
 
 #face {
  height: 25vw;
  width: auto;
+ border-radius: 10px;;
 }
 
 .card {
@@ -38,6 +40,7 @@
     flex-direction: column;
     gap: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
 
     .stars {
       width: 70px;

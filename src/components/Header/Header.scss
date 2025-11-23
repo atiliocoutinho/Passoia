@@ -53,28 +53,87 @@ header{
   background-repeat: no-repeat;
 
 
-nav {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  height: 2vh;
-  width: 100%;
-  padding: 40px;
-};
-  
-.logo {
-    width: auto;
-    height: 50px;
+    nav {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent; // Efeito vidro na navbar
+      backdrop-filter: blur(2px);
+      height: 2vh;
+      width: 100%;
+      padding: 40px;
+    };
 };
 
-ul {
+/// SIDEBAR //////////////////////////////////////////////////
+ 
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; // começa escondida
+  width: 250px;
+  height: 50vh;
+
+  background: transparent;
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.2);
+
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  transition: right 0.3s ease-in-out;
+  z-index: 200;
+
+  
+  a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #242424;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &.active {
+    right: 0; // aparece
+  }
+};
+
+/// FUNDO ESCURO AO ABRIR A SIDEBAR
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+
+  z-index: 100;
+};
+
+/////////////////////////////////////////////////////////////
+  
+.logo {
+    width: 150px;
+    height:auto;
+};
+
+.header-ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 40px;
   align-content: center;
 
   .li-header {
@@ -91,7 +150,6 @@ ul {
     a {
       text-decoration: none;
       color: $textb;
-      margin-left: 32px;
     };
   };
 };
@@ -105,7 +163,6 @@ ul {
   justify-content: center;
   cursor: pointer;
   border-radius: 100%;
-  padding: 20px;
   height: 50px;
   width: 50px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
@@ -118,6 +175,7 @@ ul {
 
   .line {
     height: 2px;
+    width: auto;
     border-radius: 4px;
     width: 30px;
     background-color: rgb(22, 22, 22);
@@ -138,7 +196,7 @@ ul {
       width:100%;
     };
 };
-};
+
 
 // Tela responsiva a partir de 770px:
 @media (max-width: 770px) {

@@ -1,5 +1,5 @@
 // Importa a estilização
-import "./Look-section.scss"
+import "./LookSection.scss"
 
 
 // Importa as imagens
@@ -11,7 +11,7 @@ import trend from "../../assets/trend.png"
 
 function LookSection() {
      return (
-        <section class="look">
+        <section id="Looks" class="look">
             <h2>LOOKS E DICAS DE MAQUIAGEM</h2>
             <div class="lookContainer">
 
