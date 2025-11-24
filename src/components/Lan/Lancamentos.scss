@@ -1,10 +1,8 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
-
-.lansection {margin-bottom: 40px};
-
+.lansection {
+  margin-bottom: 40px;
+}
 
 .landiv {
   display: flex;
@@ -14,56 +12,54 @@
 }
 
 .colum {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
-      img {
-        height: auto;
-        width: 100px;
-        border-radius: 10px;
-      };
+  img {
+    height: auto;
+    width: 100px;
+    border-radius: 10px;
+  }
 }
 
 #face {
- height: 25vw;
- width: auto;
- border-radius: 10px;;
+  height: 25vw;
+  width: auto;
+  border-radius: 10px;
 }
 
 .card {
+  display: flex;
+  height: 25vw;
+  width: 30vw;
+  padding: 20px;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+
+  .stars {
+    width: 70px;
+  }
+
+  aside {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+  }
+
+  .options {
     display: flex;
-    height: 25vw;
-    width: 30vw;
-    padding: 20px;
-    flex-direction: column;
     gap: 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 10px;
+  }
 
-    .stars {
-      width: 70px;
-    };
+  h4 {
+    margin: 0;
+  }
 
-    aside {
-      font-family: "Roboto", sans-serif;
-      font-size: 10px;
-    };
-
-    .options {
-      display: flex;
-      gap: 10px;
-    };
-
-    h4 {
-      margin: 0;
-    };
-
-    p{
-      text-align: justify;
-    };
-
+  p {
+    text-align: justify;
+  }
 }
 
 button {
@@ -75,53 +71,48 @@ button {
 }
 
 .azul {
-  background-color: #B1B0D8;
+  background-color: #b1b0d8;
 }
 
 .vermelho {
-  background-color: #E1342A;
+  background-color: #e1342a;
 }
 
 .marrom {
-  background-color: #73282D;
+  background-color: #73282d;
 }
 
 .base {
-  background-color: #DE755E;
+  background-color: #de755e;
 }
 
 // Tela responsiva a partir de 770px:
 @media (max-width: 770px) {
-
   .lansection {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 20px;
-  };
+  }
 
   .landiv {
     display: flex;
     flex-direction: column;
-  };
+  }
 
- .colum {
+  .colum {
     display: none;
- };
+  }
 
+  #face {
+    height: 50vw;
+    width: auto;
+  }
 
- #face {
-  height: 50vw;
-  width: auto;
- };
-
- .card {
-  align-items: center;
-  width: 400px;
-  height: auto;
- };
-
-
-
-};
+  .card {
+    align-items: center;
+    width: 400px;
+    height: auto;
+  }
+}

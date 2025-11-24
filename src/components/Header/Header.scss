@@ -1,7 +1,6 @@
 // Importando fonte popins do google fonts:
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
 // Reset geral:
 
 * {
@@ -42,8 +41,8 @@ p {
 
 //
 
-// Adiciona uma imagem ao fundo da header 
-header{
+// Adiciona uma imagem ao fundo da header
+header {
   height: 100%vh;
   width: 100%vw;
   padding-bottom: 53%;
@@ -52,22 +51,21 @@ header{
   background-position: center center;
   background-repeat: no-repeat;
 
-
-    nav {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: transparent; // Efeito vidro na navbar
-      backdrop-filter: blur(2px);
-      height: 2vh;
-      width: 100%;
-      padding: 40px;
-    };
-};
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent; // Efeito vidro na navbar
+    backdrop-filter: blur(2px);
+    height: 2vh;
+    width: 100%;
+    padding: 40px;
+  }
+}
 
 /// SIDEBAR //////////////////////////////////////////////////
- 
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -90,7 +88,6 @@ header{
   transition: right 0.3s ease-in-out;
   z-index: 200;
 
-  
   a {
     font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
@@ -106,7 +103,7 @@ header{
   &.active {
     right: 0; // aparece
   }
-};
+}
 
 /// FUNDO ESCURO AO ABRIR A SIDEBAR
 
@@ -121,14 +118,14 @@ header{
   backdrop-filter: blur(3px);
 
   z-index: 100;
-};
+}
 
 /////////////////////////////////////////////////////////////
-  
+
 .logo {
-    width: 150px;
-    height:auto;
-};
+  width: 150px;
+  height: auto;
+}
 
 .header-ul {
   list-style: none;
@@ -145,14 +142,14 @@ header{
       transform: scale(1.1);
       transition: transform 0.3s ease; // Suaviza o crescimento.
       color: $textb;
-    };
+    }
 
     a {
       text-decoration: none;
       color: $textb;
-    };
-  };
-};
+    }
+  }
+}
 
 // Botão de menu:
 #menu-mobile {
@@ -169,9 +166,9 @@ header{
   border: solid rgba(255, 255, 255, 0.333) 0.5px;
 
   &:hover {
-      transform: scale(1.1);
-      transition: transform 0.3s ease; // Suaviza o crescimento.
-    };
+    transform: scale(1.1);
+    transition: transform 0.3s ease; // Suaviza o crescimento.
+  }
 
   .line {
     height: 2px;
@@ -180,35 +177,30 @@ header{
     width: 30px;
     background-color: rgb(22, 22, 22);
     margin: 5px;
-  }; 
-  
-
-};
+  }
+}
 
 // Imagem da hero:
 .hero {
   padding: 0;
   margin: 0;
-  
 
-
-    .banner {
-      width:100%;
-    };
-};
-
+  .banner {
+    width: 100%;
+  }
+}
 
 // Tela responsiva a partir de 770px:
 @media (max-width: 770px) {
-
- h2 {font-size: 1.2rem;};
-
+  h2 {
+    font-size: 1.2rem;
+  }
 
   .li-header {
     display: none;
-  };
+  }
 
   #menu-mobile {
     display: flex;
-  };
-};
+  }
+}

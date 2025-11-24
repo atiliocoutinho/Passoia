@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import "./Header.scss";
 import logo from "../../assets/logo.png";
@@ -8,7 +7,6 @@ function Header() {
   return (
     <header>
       <nav>
-
         <img class="logo" src={logo} alt="Logo" />
 
         <div id="menu-mobile" onClick={() => setMenuOpen(!menuOpen)}>
@@ -18,11 +16,17 @@ function Header() {
             <div class="line line3"></div>
           </div>
         </div>
-        
+
         <ul class="header-ul">
-          <li class="li-header"><a href="#">LOOKS</a></li>
-          <li class="li-header"><a href="#">LANÇAMENTOS</a></li>
-          <li class="li-header"><a href="#">NOVIDADES</a></li>
+          <li class="li-header">
+            <a href="#">LOOKS</a>
+          </li>
+          <li class="li-header">
+            <a href="#">LANÇAMENTOS</a>
+          </li>
+          <li class="li-header">
+            <a href="#">NOVIDADES</a>
+          </li>
         </ul>
       </nav>
 
@@ -32,13 +36,9 @@ function Header() {
         <a href="#Novidades">NOVIDADES</a>
       </aside>
 
-     {menuOpen && (
-        <div
-          className="overlay"
-          onClick={() => setMenuOpen(false)}
-        ></div>
+      {menuOpen && (
+        <div className="overlay" onClick={() => setMenuOpen(false)}></div>
       )}
-
     </header>
   );
 }

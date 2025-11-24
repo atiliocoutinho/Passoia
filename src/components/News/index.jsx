@@ -1,16 +1,15 @@
-
-import "./New.scss"
-import Newpng from "../../assets/nforu.png"
+import "./New.scss";
+import Newpng from "../../assets/nforu.png";
 
 function New() {
-    return (
-        <section id="Novidades">
-        <h2>NOVIDADADES PARA VOCÊ</h2>
-        <div class="newimg">
-          <img class="Newpng" src={Newpng} alt="" />
-        </div>
-        </section>
-    );
-};
+  return (
+    <section id="Novidades">
+      <h2>NOVIDADADES PARA VOCÊ</h2>
+      <div class="newimg">
+        <img class="Newpng" src={Newpng} alt="" />
+      </div>
+    </section>
+  );
+}
 
 export default New;
