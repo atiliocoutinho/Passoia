@@ -19,13 +19,13 @@ function Header() {
 
         <ul class="header-ul">
           <li class="li-header">
-            <a href="#">LOOKS</a>
+            <a href="#Looks">LOOKS</a>
           </li>
           <li class="li-header">
-            <a href="#">LANÇAMENTOS</a>
+            <a href="#Lançamentos">LANÇAMENTOS</a>
           </li>
           <li class="li-header">
-            <a href="#">NOVIDADES</a>
+            <a href="#Novidades">NOVIDADES</a>
           </li>
         </ul>
       </nav>
