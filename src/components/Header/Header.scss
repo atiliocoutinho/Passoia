@@ -192,9 +192,12 @@ header {
 
 // Tela responsiva a partir de 770px:
 @media (max-width: 770px) {
+
+  // Alteração da tipografia geral:
+
   h2 {
-    font-size: 1.2rem;
-  }
+    font-size: 0.9rem;
+  };
 
   .li-header {
     display: none;
